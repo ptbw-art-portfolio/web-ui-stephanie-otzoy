@@ -1,0 +1,5 @@
+html body {
+  background-image: url('../images/Dragon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
