@@ -155,8 +155,7 @@ html header nav ul li a {
   flex-wrap: none;
 }
 html body {
-  background: #464655;
-  background: linear-gradient(90deg, #464655 0%, #b7b6c1 35%, #eddfef 100%);
+  background: #d5cfe1;
 }
 html body .olcontinue {
   position: absolute;
@@ -175,7 +174,7 @@ html body h1 {
   font-size: 5rem;
 }
 html body .container {
-  width: 1000px;
+  width: 60%;
   margin: auto;
 }
 html body .container .continue {
@@ -196,7 +195,6 @@ html body .container .feature .content {
   position: absolute;
   font-size: 3rem;
   flex-wrap: wrap;
-  width: 350px;
   padding: 30px;
   top: 50px;
   color: black;
@@ -226,6 +224,10 @@ html body .container #info {
   padding: 1px;
   font-size: 3rem;
   text-align: justify;
+}
+html body .container #info .index {
+  border-bottom: black dashed 4px;
+  padding: 30px;
 }
 html body .container #info .infoTitle {
   text-align: center;
