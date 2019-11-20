@@ -1,3 +1,131 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -9,51 +137,71 @@ html header nav {
   width: 100%;
 }
 html header nav ul {
-  list-style-type: none;
   display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 html header nav ul li {
-  list-style-type: none;
   display: flex;
-  padding: 0 40% 0 40%;
+  list-style-type: none;
 }
 html header nav ul li a {
+  display: flex;
   text-decoration: none;
   color: #464655;
   font-size: 3rem;
-  display: flex;
-  padding: 0 5% 0 5%;
+  flex-wrap: none;
 }
 html body {
-  background-image: url('../images/Dragon.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: #b7b6c1;
+  background: #464655;
+  background: linear-gradient(90deg, #464655 0%, #b7b6c1 35%, #eddfef 100%);
+}
+html body .olcontinue {
+  position: absolute;
+  font-size: 3rem;
+  top: 80%;
+  left: 50%;
+  width: 270px;
+  text-align: center;
+  color: white;
 }
 html body .container {
   width: 1000px;
+  margin: auto;
 }
 html body .container h1 {
   color: #464655;
   font-size: 5rem;
-  width: 700px;
   text-align: center;
 }
 html body .container h1 .TopHeader {
+  position: absolute;
   padding-top: 30px;
+  z-index: 1;
+}
+html body .container .continue {
+  position: absolute;
+  display: flex;
+  top: 80%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
 }
 html body .container .feature {
-  display: flex;
-  position: relative;
-  margin-left: 125px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  z-index: 1;
 }
-html body .container .feature .explain {
-  display: flex;
+html body .container .feature .content {
   position: absolute;
   font-size: 3rem;
   flex-wrap: wrap;
   width: 350px;
   padding: 30px;
+  top: 50px;
   color: black;
 }
 html body .container .feature .btn {
@@ -66,5 +214,19 @@ html body .container .feature .btn {
   vertical-align: middle;
   padding: 1%;
   border-radius: 50%;
-  margin: 350px 0 0 110px;
+  top: 300px;
+  left: 75px;
+  margin: 10px;
+}
+html body .container .background {
+  position: relative;
+  z-index: -1;
+}
+html body .container .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1px;
+  font-size: 3rem;
+  text-align: justify;
 }
