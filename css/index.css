@@ -126,33 +126,117 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+.form button {
+  display: flex;
+  margin: 10px;
 }
-html header nav {
+.make-comment {
+  display: flex;
+  flex-direction: column;
+}
+.btn .primary-btn .small-btn {
+  display: flex;
+  margin: 10px;
+  padding-top: 20px;
+  width: 200px;
+}
+.textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+.post {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+.comments-section {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+.comment {
+  margin-bottom: 10px;
+}
+.comment .comment-name {
+  font-weight: bold;
+}
+.comment .comment-date {
+  font-style: italic;
+  font-size: 0.8em;
+}
+.comment .reply-btn,
+.edit-btn {
+  font-size: 0.8em;
+}
+.comment-details {
+  width: 91.5%;
+  float: left;
+}
+.comment-details p {
+  margin-bottom: 0px;
+}
+.comment .profile_pic {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  float: left;
+  border-radius: 50%;
+}
+.reply {
+  margin-left: 30px;
+}
+.reply_form {
+  margin-left: 40px;
+  display: none;
+}
+#comment_form {
+  margin-top: 10px;
+}
+header nav {
   display: flex;
   background-color: #94958b;
   text-decoration: none;
   width: 100%;
 }
-html header nav ul {
+header nav ul {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
-html header nav ul li {
+header nav ul li {
   display: flex;
   list-style-type: none;
 }
-html header nav ul li a {
+header nav ul li a {
   display: flex;
   text-decoration: none;
   color: #464655;
   font-size: 3rem;
   flex-wrap: none;
+}
+.container footer nav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container footer nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container footer nav ul li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container footer nav ul li a {
+  padding: 10px;
+  justify-content: space-around;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 html body {
   background: #d5cfe1;
@@ -166,18 +250,30 @@ html body .olcontinue {
   text-align: center;
   color: white;
 }
+@media (max-width: 1500px) {
+  html body .olcontinue {
+    top: 20%;
+    left: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  html body .olcontinue {
+    visibility: hidden;
+  }
+}
 html body .title {
   position: absolute;
+}
+@media (max-width: 1000px) {
+  html body .title {
+    visibility: hidden;
+  }
 }
 html body h1 {
   color: #464655;
   font-size: 5rem;
 }
-html body .container {
-  width: 60%;
-  margin: auto;
-}
-html body .container .continue {
+html body .continue {
   position: absolute;
   display: flex;
   top: 50%;
@@ -185,11 +281,34 @@ html body .container .continue {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1500px) {
+  html body .continue {
+    top: 20%;
+    left: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  html body .continue {
+    visibility: hidden;
+  }
+}
+html body .container {
+  width: 70%;
+  margin: auto;
+}
 html body .container .feature {
   position: absolute;
   top: 100px;
   left: 40px;
   z-index: 1;
+}
+@media (max-width: 1000px) {
+  html body .container .feature {
+    top: 100px;
+    left: 0;
+    position: relative;
+    padding-bottom: 150px;
+  }
 }
 html body .container .feature .content {
   position: absolute;
@@ -216,6 +335,11 @@ html body .container .feature .btn {
 html body .container .background {
   position: relative;
   z-index: -1;
+}
+@media (max-width: 500px) {
+  html body .container .background {
+    visibility: hidden;
+  }
 }
 html body .container #info {
   display: flex;

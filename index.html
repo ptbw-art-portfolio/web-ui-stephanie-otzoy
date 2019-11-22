@@ -23,17 +23,17 @@
         <div class = "background">
                 <img src = 'images/Dragon.png' alt = "background" style= "max-width: 100%">
         </div>
+        <p class = "olcontinue">Continue</p>
+        <div class = "continue">
+               <a href = "#info"><img src = "images/arrow.png" alt="arrow down" width = 50%;></a>
+        </div>
         <div class = "container">
         <div class = "feature">              
-                <img src = "images/feature.png" alt="Featured Art">
+                <img class = resize src = "images/feature.png" alt="Featured Art">
                 <div class = "content">
                         <b>image goes here.</b>
                 </div>
                 <div class = "btn">Click Here For Images</div>
-        </div>
-        <p class = "olcontinue">Continue</p>
-        <div class = "continue">
-               <a href = "#info"><img src = "images/arrow.png" alt="arrow down" width = 50%;></a>
         </div>
         <div id = "info">
                 <h1 class = "infoTitle">Feature, A Better Art Gallery</h1>
@@ -53,8 +53,29 @@
                                 but don't have the time to make their own website. 
                 </p>
         </div>
-</div>
+
+<div class="row">
+        <div class="comments-section">
+                <form class="make-comment" action="index.html" method="post" id="comment_form">
+                        <h4>Post a comment:</h4>
+                        <textarea name="comment_text" id="comment_text" class="form-control" cols="50" rows="4"></textarea>
+                        <button class="btn primary-btn small-btn" id="submit-comment">Submit comment</button>
+                </form>
+
+                <h2><span id="comment-count">0</span> Comment(s)</h2>
+                                                        </div>
+                                                </div>
+
 </body>
 <footer>
+        <nav>
+                <ul>
+                        <li><a href = "#"><img src="images/facebook.png" alt= "facebook" width = "50px"></a></li>
+                        <li><a href = "#"><img src="images/instagram.png" alt= "instagram" width = "50px"></a></li>
+                        <li><a href = "#"><img src="images/twitter.png" alt= "twitter" width = "50px"></a></li>
+                        <li><a href = "#"><img src="images/mail.png" alt= "mail" width = "50px"></a></li>
+                </ul>
+        </nav>
+</div>
 </footer>
 </html>
