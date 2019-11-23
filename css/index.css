@@ -186,9 +186,14 @@ table {
 .reply_form {
   margin-left: 40px;
   display: none;
+  color: white;
 }
 #comment_form {
   margin-top: 10px;
+}
+h2,
+h4 {
+  color: white;
 }
 header nav {
   display: flex;
@@ -239,7 +244,7 @@ html {
   font-size: 62.5%;
 }
 html body {
-  background: #d5cfe1;
+  background: black;
 }
 html body .olcontinue {
   position: absolute;
@@ -270,7 +275,7 @@ html body .title {
   }
 }
 html body h1 {
-  color: #464655;
+  color: white;
   font-size: 5rem;
 }
 html body .continue {
@@ -352,6 +357,9 @@ html body .container #info {
 html body .container #info .index {
   border-bottom: black dashed 4px;
   padding: 30px;
+}
+html body .container #info p {
+  color: white;
 }
 html body .container #info .infoTitle {
   text-align: center;
